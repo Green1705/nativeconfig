@@ -506,8 +506,7 @@ class ConfigMixin(ABC):
 
         c = MyConfig.get_instance()
         self.assertEqual(c.option_for_name('FirstName'), getattr(MyConfig, 'first_name'))
-    #new comment
-    print("hello world")
+
 
     def test_option_for_name_returns_None_if_option_not_found(self):
         class MyConfig(self.CONFIG_TYPE):
